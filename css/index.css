@@ -1,0 +1,19 @@
+div#header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: lightslategray;
+}
+div#invisible-header {
+    width: 100%;
+    visibility: hidden;
+}
+div#header h1, div#invisible-header h1 {
+    font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+}
+div#main {
+    width: 90%;
+}
