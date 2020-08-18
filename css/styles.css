@@ -1,3 +1,4 @@
+/* The main header for the page */
 div#header {
     width: 100%;
     position: absolute;
@@ -5,72 +6,107 @@ div#header {
     left: 0;
     background-color: gray;
 }
+
+/* An invisible header that helps with stuff */
 div#invisible-header {
     width: 100%;
     visibility: hidden;
 }
+
+/* Shared features of both headers */
 div#header h1, div#invisible-header h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     color: black;
     text-align: center;
 }
+
+/* The horizontal navigation bar */
 div#horiz-navbar {
     clear: both;
-    width: 100%;
-}
-div#horiz-navbar ul {
-    list-style-type: none;
     padding-left: 0;
-}
-div#horiz-navbar ul li {
     text-align: center;
     display: inline;
-    width: 19%;
-    float: left;
-    margin: .5em .5em 0 0;
+    margin: .5em 5em 0 0;
 }
-li.changeBackground {
-    background-color: gray;
-}
-li.changeBackground:hover {
-    background-color: lightslategray;
-}
-div#horiz-navbar ul li a {
+
+/* links within the navbar */
+div#horiz-navbar a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     font-weight: 900;
     text-decoration: none;
     color: black;
-    display: block;
-    padding: .75em;
-}
-.dropdown {
     background-color: gray;
+    display: inline-block;
+    padding: .75em;
+    margin-top: .25em;
 }
+
+/* the div for the dropdown meny */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Button */
+.dropdown-button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+    background-color: gray;
+    display: inline-block;
+    padding: .75em;
+    border: none;
+}
+
+/* The stuff in the dropdown menu */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: lightslategray;
-    min-width: 160px;
+    background-color: gray;
     z-index: 1;
 }
+
+/* Links within the dropdown menu */
 .dropdown-content a {
-    float: none;
     color: black;
-    padding: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 900;
+    padding: .5em;
     text-decoration: none;
     display: block;
-    text-align: left;    
 }
-.dropdown:hover {
+
+/* Change the color of links in the dropdown menu */
+.dropdown-content a:hover {
     background-color: lightslategray;
 }
+
+/* Make the dropdown menu visible */
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Change the color of the dropdown button on hover */
+.dropdown:hover .dropdown-button {
+    background-color: lightslategray;
+}
+
+/* The main content of the page */
 div#main {
-    width: 90%;
+    width: 80%;
+    margin: 0 10em 0 10em;
+}
+
+/* h2 headings, used for page titles */
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
