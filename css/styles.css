@@ -1,22 +1,31 @@
 /* The main header for the page */
 div#header {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto 0 10%;
     position: absolute;
     top: 0;
-    left: 0;
     background-color: gray;
 }
 
 /* An invisible header that helps with stuff */
 div#invisible-header {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto 0 10%;
+    top: 0;
     visibility: hidden;
+}
+
+/* The main content of the page */
+div#main {
+    width: 80%;
+    margin: 0 auto 0 10%;
 }
 
 /* Shared features of both headers */
 div#header h1, div#invisible-header h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
+    font-size: 2.5em;
     color: black;
     text-align: center;
 }
@@ -41,6 +50,10 @@ div#horiz-navbar a {
     display: inline-block;
     padding: .75em;
     margin-top: .25em;
+}
+
+div#horiz-navbar a:hover {
+    background-color: lightslategray;
 }
 
 /* the div for the dropdown meny */
@@ -93,20 +106,34 @@ div#horiz-navbar a {
     background-color: lightslategray;
 }
 
-/* The main content of the page */
-div#main {
-    width: 80%;
-    margin: 0 10em 0 10em;
-}
-
 /* h2 headings, used for page titles */
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
+    font-size: 1.7em;
 }
 
 h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: italic;
+}
+
+/* For 'People' pages */
+.headshot {
+    display: block;
+    float: left;
+    width: 14%;
+}
+p {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    top: 0;
+}
+.person_descrip {
+    display: block;
+    width: 83%;
+    float: right;
+    margin: 0 0 0 1em;
 }
