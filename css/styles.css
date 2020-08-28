@@ -123,7 +123,7 @@ h3 {
 .headshot {
     display: block;
     float: left;
-    width: 14%;
+    width: 20%;
 }
 p {
     display: inline;
@@ -133,7 +133,18 @@ p {
 }
 .person_descrip {
     display: block;
-    width: 83%;
-    float: right;
+    width: 75%;
+    float: left;
     margin: 0 0 0 1em;
+}
+
+.main-page-content {
+    width: 73%;
+    float: left;
+}
+
+.tweeter {
+    width: 25%;
+    float: right;
+    margin-top: 1em;
 }
